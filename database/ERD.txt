@@ -1,0 +1,45 @@
+DATABASE TABLES
+
+1. users
+- id (PK)
+- employee_no
+- fullname
+- email
+- password
+- role
+- department
+- vacation_leave
+- sick_leave
+- created_at
+
+2. leave_requests
+- id (PK)
+- employee_id (FK -> users.id)
+- leave_type
+- days
+- start_date
+- end_date
+- reason
+- attachment_note
+- status
+- hrmo_action_by (FK -> users.id)
+- hrmo_action_at
+- hrmo_remark
+- head_action_by (FK -> users.id)
+- head_action_at
+- head_remark
+- created_at
+
+3. notifications
+- id (PK)
+- user_id (FK -> users.id)
+- message
+- is_read
+- created_at
+
+4. audit_logs
+- id (PK)
+- user_id (FK -> users.id)
+- action
+- details
+- created_at

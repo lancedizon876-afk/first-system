@@ -1,0 +1,1 @@
+Put your login background image here and rename it to login-bg.jpg
